@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 dotenv.config()
 const port = 4000;
-
+console.log("Mongo URL:", process.env.MONGODB_URL);
 app.use(express.json());
 app.use(cors(
   {
